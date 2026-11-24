@@ -1,0 +1,21 @@
+{
+  "name": "trello-clone",
+  "version": "1.0.0",
+  "description": "A Trello-style task management app built with the MERN stack: boards, lists, drag-and-drop cards, real-time updates, and AI comment summaries.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariamArafa-0/trello-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MariamArafa-0/trello-clone/issues"
+  },
+  "homepage": "https://github.com/MariamArafa-0/trello-clone#readme"
+}
