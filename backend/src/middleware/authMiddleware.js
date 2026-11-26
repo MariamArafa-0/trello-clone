@@ -27,9 +27,16 @@ export const authMiddleware=async(req,res,next)=>{
 
     next();
     }
-    catch(error){
-        res.status(401).json({
-            message:"unauthorized, invalid token"
-        });
-    }
+   // catch(error){
+    //    res.status(401).json({
+    //        message:"unauthorized, invalid token"
+    //    });
+    //}
+    catch(error) {
+    console.error("JWT ERROR:", error.name, error.message);
+
+    return res.status(401).json({
+        message: "unauthorized, invalid token"
+    });
+}
 }
