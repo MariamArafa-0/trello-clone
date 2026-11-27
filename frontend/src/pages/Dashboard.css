@@ -1,0 +1,113 @@
+
+/* Dashboard */
+.dashboard {
+    min-height: 100vh;
+    padding: 55px 7%;
+    background: linear-gradient(135deg, #f5f3ff, #f0f7ff, #fff4f7);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.dashboard h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #29244f;
+    margin-top: 30px;
+    margin-bottom: 65px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+/* Header */
+.dashboard-header {
+    margin-bottom: 55px;
+    padding: 35px 40px;
+    border-radius: 22px;
+    background: linear-gradient(120deg, #5145cd, #8168e8, #ad83ee);
+    color: white;
+    box-shadow: 0 12px 30px rgba(92, 73, 190, 0.2);
+}
+
+.dashboard-header h1 {
+    font-size: 34px;
+    font-weight: 750;
+    margin-bottom: 12px;
+}
+
+.dashboard-header p {
+    font-size: 15px;
+    color: #eeeaff;
+}
+
+/* Boards section */
+.boards-section h2 {
+    color: #29244f;
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 750;
+}
+
+/* Boards grid */
+.boards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    width: 100%;
+}
+
+/* Empty state */
+.empty-message {
+    padding: 40px;
+    text-align: center;
+    color: #8883a6;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .dashboard {
+        padding: 30px 20px;
+    }
+
+    .dashboard-header {
+        padding: 25px;
+        margin-bottom: 35px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 27px;
+    }
+
+    .boards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Tablets */
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 35px 5%;
+    }
+
+    .boards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 18px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .dashboard {
+        padding: 25px 18px;
+    }
+
+    .dashboard h1 {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .boards-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .board-card {
+        min-height: 160px;
+    }
+}

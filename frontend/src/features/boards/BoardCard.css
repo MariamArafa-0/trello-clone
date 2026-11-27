@@ -1,0 +1,82 @@
+
+/* Individual board card */
+.board-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 190px;
+    padding: 26px;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Different colors for different boards */
+.board-card:nth-child(4n + 1) {
+    background: linear-gradient(135deg, #6655d9, #a18af5);
+}
+
+.board-card:nth-child(4n + 2) {
+    background: linear-gradient(135deg, #168bb5, #59c8df);
+}
+
+.board-card:nth-child(4n + 3) {
+    background: linear-gradient(135deg, #159b7c, #6bd6ae);
+}
+
+.board-card:nth-child(4n + 4) {
+    background: linear-gradient(135deg, #e56b91, #f6a5ad);
+}
+
+/* Decorative circles */
+.board-card::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    right: -50px;
+    top: -65px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.board-card::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 35px;
+    bottom: -65px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Hover */
+.board-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 28px rgba(40, 30, 90, 0.18);
+}
+
+/* Board title */
+.board-card h3 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 21px;
+    font-weight: 750;
+    margin-bottom: 13px;
+}
+
+/* Board description */
+.board-card p {
+    position: relative;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    line-height: 1.7;
+}
